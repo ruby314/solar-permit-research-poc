@@ -70,4 +70,4 @@ if __name__ == "__main__":
             outputs=output_file,
         )
 
-    demo.launch()
+    demo.launch(share=True)
