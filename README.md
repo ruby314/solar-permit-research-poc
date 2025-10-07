@@ -63,6 +63,8 @@ In the given time, there were many things that could not be done, besides the un
 - Thorough testing. This was tested with two samples: Santa Cruz CA and Mesa AZ, using the generated mock PDFs.
 - Exception handling. It is possible that other examples will hit exceptions not handled in the code.
 - Obvious improvements, for example the project address does not need to be extracted from the documents (and in the Santa Cruz example, is extracted incorrectly).
+- Improved prompts (which are typically developed by testing over a broad set of data). For example, if given an incomplete or irrelevant document, with the current prompts the permit agent will likely hallucinate information (common behavior even for frontier LLMs).
+- Handle the more realistic case of uploading multiple documents to the permit agent. This is a straightforward extension in the indexing step.
 
 # Future improvements: some examples
 
